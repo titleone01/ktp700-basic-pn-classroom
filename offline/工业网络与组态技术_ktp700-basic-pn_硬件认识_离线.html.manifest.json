@@ -1,0 +1,12 @@
+{
+  "file": "工业网络与组态技术_ktp700-basic-pn_硬件认识_离线.html",
+  "bytes": 4074103,
+  "sha256": "2441bd3728b72212894227cc86c56c3a20216e68a58013b02a7ed3b18dfc2dba",
+  "embeddedModels": [
+    {
+      "id": "ktp700-basic-pn",
+      "bytes": 2459424,
+      "sha256": "07d2c1d99e83e544f1875bc841f179e69e2c3283b572ceada5d8ed869c779d02"
+    }
+  ]
+}

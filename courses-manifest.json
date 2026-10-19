@@ -1,0 +1,111 @@
+{
+  "device": "ktp700-basic-pn",
+  "repo": "ktp700-basic-pn-classroom",
+  "modelLabel": "KTP700 Basic PN",
+  "hardwareOnly": true,
+  "sourceKind": "factory",
+  "variants": [
+    {
+      "id": "ktp700-basic-pn",
+      "label": "KTP700 Basic PN",
+      "model": {
+        "full": "ktp700-basic-pn-full.glb",
+        "factoryTriangles": 74400,
+        "compressed": "ktp700-basic-pn-07d2c1d99e83.glb.gz",
+        "fallback": "ktp700-basic-pn-07d2c1d99e83.glb",
+        "compressedBytes": 1859176,
+        "decodedBytes": 2459424,
+        "triangles": 74400,
+        "sha256": "07d2c1d99e83e544f1875bc841f179e69e2c3283b572ceada5d8ed869c779d02",
+        "gzipSha256": "235056be6b123116412ff4d4f230f4c6b9619c4a38d77a678599b8894368c10a"
+      },
+      "topicCount": 10,
+      "motions": [
+        {
+          "id": "power-connector",
+          "label": "电源插头",
+          "node": "power_connector",
+          "translation": [
+            0,
+            -32,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "industrial-network",
+      "title": "工业网络与组态技术",
+      "url": "https://titleone01.github.io/ktp700-basic-pn-classroom/industrial-network/",
+      "offlineFile": "工业网络与组态技术_ktp700-basic-pn_硬件认识_离线.html",
+      "offline": {
+        "file": "工业网络与组态技术_ktp700-basic-pn_硬件认识_离线.html",
+        "bytes": 4074103,
+        "sha256": "2441bd3728b72212894227cc86c56c3a20216e68a58013b02a7ed3b18dfc2dba",
+        "embeddedModels": [
+          {
+            "id": "ktp700-basic-pn",
+            "bytes": 2459424,
+            "sha256": "07d2c1d99e83e544f1875bc841f179e69e2c3283b572ceada5d8ed869c779d02"
+          }
+        ]
+      },
+      "bundle": "app-a8d168451ae7.js",
+      "htmlSha256": "65d181715c8b0e893ff4576c99a4b0d3c2d52050c4529671605583edef0020ce",
+      "bundleSha256": "a8d168451ae72220c3645b76566ca5758b39b7f78969de07948d7b1ff02e3356",
+      "models": [
+        {
+          "variant": "ktp700-basic-pn",
+          "file": "ktp700-basic-pn-07d2c1d99e83.glb.gz",
+          "bytes": 1859176,
+          "sha256": "235056be6b123116412ff4d4f230f4c6b9619c4a38d77a678599b8894368c10a"
+        },
+        {
+          "variant": "ktp700-basic-pn",
+          "file": "ktp700-basic-pn-07d2c1d99e83.glb",
+          "bytes": 2459424,
+          "sha256": "07d2c1d99e83e544f1875bc841f179e69e2c3283b572ceada5d8ed869c779d02"
+        }
+      ],
+      "embed": "<iframe src=\"https://titleone01.github.io/ktp700-basic-pn-classroom/industrial-network/\" title=\"工业网络与组态技术 · KTP700 Basic PN硬件认识\" width=\"100%\" height=\"1900\" style=\"border:0\" loading=\"lazy\" allow=\"fullscreen\"></iframe>"
+    },
+    {
+      "id": "plc-application",
+      "title": "PLC应用技术",
+      "url": "https://titleone01.github.io/ktp700-basic-pn-classroom/plc-application/",
+      "offlineFile": "PLC应用技术_ktp700-basic-pn_硬件认识_离线.html",
+      "offline": {
+        "file": "PLC应用技术_ktp700-basic-pn_硬件认识_离线.html",
+        "bytes": 4074079,
+        "sha256": "61d617d5da99a98f2abb68e2290b64274b1e16206dbfa7cc6344a42bf6888241",
+        "embeddedModels": [
+          {
+            "id": "ktp700-basic-pn",
+            "bytes": 2459424,
+            "sha256": "07d2c1d99e83e544f1875bc841f179e69e2c3283b572ceada5d8ed869c779d02"
+          }
+        ]
+      },
+      "bundle": "app-a8d168451ae7.js",
+      "htmlSha256": "2db6c50318fdd9008eb406eca7bd805b56ccb9b2c10a473c0c517e93c7b4563b",
+      "bundleSha256": "a8d168451ae72220c3645b76566ca5758b39b7f78969de07948d7b1ff02e3356",
+      "models": [
+        {
+          "variant": "ktp700-basic-pn",
+          "file": "ktp700-basic-pn-07d2c1d99e83.glb.gz",
+          "bytes": 1859176,
+          "sha256": "235056be6b123116412ff4d4f230f4c6b9619c4a38d77a678599b8894368c10a"
+        },
+        {
+          "variant": "ktp700-basic-pn",
+          "file": "ktp700-basic-pn-07d2c1d99e83.glb",
+          "bytes": 2459424,
+          "sha256": "07d2c1d99e83e544f1875bc841f179e69e2c3283b572ceada5d8ed869c779d02"
+        }
+      ],
+      "embed": "<iframe src=\"https://titleone01.github.io/ktp700-basic-pn-classroom/plc-application/\" title=\"PLC应用技术 · KTP700 Basic PN硬件认识\" width=\"100%\" height=\"1900\" style=\"border:0\" loading=\"lazy\" allow=\"fullscreen\"></iframe>"
+    }
+  ]
+}

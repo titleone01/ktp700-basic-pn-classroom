@@ -1,0 +1,12 @@
+{
+  "file": "PLC应用技术_ktp700-basic-pn_硬件认识_离线.html",
+  "bytes": 4074079,
+  "sha256": "61d617d5da99a98f2abb68e2290b64274b1e16206dbfa7cc6344a42bf6888241",
+  "embeddedModels": [
+    {
+      "id": "ktp700-basic-pn",
+      "bytes": 2459424,
+      "sha256": "07d2c1d99e83e544f1875bc841f179e69e2c3283b572ceada5d8ed869c779d02"
+    }
+  ]
+}

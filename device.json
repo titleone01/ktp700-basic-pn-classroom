@@ -1,0 +1,388 @@
+{
+  "id": "ktp700-basic-pn",
+  "repo": "ktp700-basic-pn-classroom",
+  "brand": "西门子 Siemens",
+  "title": "西门子 KTP700 Basic PN 触摸屏",
+  "modelLabel": "KTP700 Basic PN",
+  "orderNumber": "6AV2123-2GB03-0AX0",
+  "sourceKind": "factory",
+  "sourceLabel": "西门子原厂 CAD",
+  "description": "使用西门子原厂 STEP，完整保留机身、原有标识和可拆电源插头，认识屏幕、功能键、供电、接地、通信与面板安装。",
+  "sources": [
+    {
+      "title": "西门子 KTP700 Basic PN 官方产品页",
+      "url": "https://sieportal.siemens.com/en-bg/products-services/detail/6AV2123-2GB03-0AX0?tree=CatalogTree"
+    },
+    {
+      "title": "西门子 Basic Panels 第二代硬件手册（10/2024）",
+      "url": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf"
+    },
+    {
+      "title": "西门子原厂 STEP · G_ST70_XX_99375V",
+      "url": "https://static.siemens.com/mimes/imagedb_stp/G_ST70_XX_99375V.stp"
+    }
+  ],
+  "variants": [
+    {
+      "id": "ktp700-basic-pn",
+      "label": "KTP700 Basic PN",
+      "dimensions": [
+        214,
+        158,
+        45.3
+      ],
+      "model": {
+        "full": "ktp700-basic-pn-full.glb",
+        "factoryTriangles": 74400,
+        "compressed": "ktp700-basic-pn-07d2c1d99e83.glb.gz",
+        "fallback": "ktp700-basic-pn-07d2c1d99e83.glb",
+        "compressedBytes": 1859176,
+        "decodedBytes": 2459424,
+        "triangles": 74400,
+        "sha256": "07d2c1d99e83e544f1875bc841f179e69e2c3283b572ceada5d8ed869c779d02",
+        "gzipSha256": "235056be6b123116412ff4d4f230f4c6b9619c4a38d77a678599b8894368c10a"
+      },
+      "topics": [
+        {
+          "id": "overview",
+          "title": "整机与型号",
+          "eyebrow": "SIMATIC HMI · 第二代 Basic Panel",
+          "summary": "KTP700 Basic PN 是带 7 英寸显示屏、触摸输入和 8 个功能键的人机界面，订货号为 6AV2123-2GB03-0AX0。",
+          "purpose": "HMI 用于显示设备信息并接收操作输入。先认识前面板，再观察背面铭牌、底部接口和面板安装结构。",
+          "connection": "本机额定电源为 24 V DC；PLC 通信及组态 PC 连接使用 X1 PROFINET / Ethernet 接口。",
+          "example": "课堂练习：找到电源 X80、网口 X1 和 USB X60，并说明每个连接口的用途。",
+          "notes": [
+            "本页对应 PN 型号；PROFIBUS DP 型号的订货号、接口不同。",
+            "保留原厂 CAD 的 74,400 个三角面及装配比例。依官方外观整理材质，屏幕为静态关屏配色。",
+            "前框 214 × 158 mm；安装深度 39 mm，前框厚度 6.2 mm。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=12",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 12 页",
+          "view": "front"
+        },
+        {
+          "id": "display",
+          "title": "显示与触摸",
+          "eyebrow": "7 英寸 · 800 × 480",
+          "summary": "正面的大矩形区域为 TFT 显示与模拟电阻式触摸区域，分辨率为 800 × 480，支持 65,536 色。",
+          "purpose": "显示区呈现组态画面，触摸区接收按键、数值输入等操作；触摸本身不代替外部设备的电源和通信连接。",
+          "connection": "显示与触控集成在面板内；24 V 电源接 X80，与控制器的数据交换使用 X1。",
+          "example": "观察屏幕与下方 F1～F8 功能键的相对位置，区分屏幕触摸输入和实体按键输入。",
+          "notes": [
+            "有效显示区域为 154.1 × 85.9 mm。",
+            "屏幕使用原厂几何的静态深灰关屏材质；本页未加载真实运行项目。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=116",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 116 页",
+          "view": "front",
+          "anchor": {
+            "position": [
+              0,
+              6,
+              -0.8
+            ],
+            "normal": [
+              0,
+              0,
+              1
+            ],
+            "size": [
+              154.1,
+              85.9,
+              1
+            ],
+            "occlusionTolerance": 2
+          }
+        },
+        {
+          "id": "function-keys",
+          "title": "功能键与标签条",
+          "eyebrow": "F1～F8 · 标签导槽",
+          "summary": "屏幕下方共有 8 个功能键，标记为 F1～F8。可插入标签条，为各键标注当前项目中的用途。",
+          "purpose": "功能键用于执行组态项目分配的操作；标签条帮助操作者在按键前识别功能。键名并不固定等同于启动、停止等设备命令。",
+          "connection": "功能键与标签条无外部接线端子。安装面板前，按官方手册从机身的导向结构插入适用标签条。",
+          "example": "按顺序辨认 F1～F8；说明更换组态用途后为什么也要核对标签条文字。",
+          "notes": [
+            "背部标签条导向结构的位置见官方手册第 12 页，第 27 页给出插入步骤。",
+            "原厂 CAD 保留前面板按键和标识；标签条不是 PLC 的输入接线端子。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=12",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 12 页",
+          "view": "front",
+          "anchor": {
+            "position": [
+              0,
+              -57,
+              -0.2
+            ],
+            "normal": [
+              0,
+              0,
+              1
+            ],
+            "size": [
+              150,
+              15,
+              1
+            ],
+            "occlusionTolerance": 2
+          }
+        },
+        {
+          "id": "power",
+          "title": "X80 电源端子",
+          "eyebrow": "DC 24 V · 可拆电源插头",
+          "summary": "底部 X80 是两针 24 V DC 电源接口，背部标识为 DC24V X80、L+ 和 M。原厂模型中的电源插头是独立可拆件。",
+          "purpose": "X80 为 HMI 本机供电。可拆插头便于接线，供电回路与用于数据交换的网线各有用途。",
+          "connection": "核对极性后接线：接口针 1 为 +24 V DC（L+），针 2 为 Ground（M）；允许电压范围 19.2～28.8 V DC。",
+          "example": "先辨认背部 L+ / M 标识，再观察插头沿底部接口方向拔出和装回。实物接线在断电状态完成。",
+          "notes": [
+            "使用符合官方要求、具安全电气隔离的 24 V DC 电源。",
+            "典型电流约 230 mA，最大持续电流约 440 mA；按官方资料选择供电。",
+            "网页中向下平移 32 mm 是教学分离距离，不是厂商规定的插拔行程。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=34",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 34 页",
+          "view": "bottom",
+          "anchor": {
+            "position": [
+              41.5,
+              -72.8,
+              -31.85
+            ],
+            "normal": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              10.2,
+              2,
+              14.9
+            ],
+            "occlusionTolerance": 2,
+            "node": "power_connector"
+          }
+        },
+        {
+          "id": "functional-ground",
+          "title": "功能接地",
+          "eyebrow": "机身接地点 · 等电位连接",
+          "summary": "背面下部有独立的功能接地点，位于底部接口区旁边。它与 X80 的两针电源插头在结构上分开。",
+          "purpose": "功能接地和等电位连接有助于减小不同设备之间的电位差，降低通信线路承受的干扰和均衡电流。",
+          "connection": "按官方接线图，将机身功能接地点接至等电位连接排；具体导线截面、屏蔽接法按手册与安装条件确定。",
+          "example": "翻到背面找出接地螺钉，说明它与 X80 的 M 端、网线屏蔽各自的位置和作用。",
+          "notes": [
+            "官方手册第 32 页给出机身功能接地连接示意。",
+            "数据线屏蔽层不能代替规定的等电位连接导体。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=32",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 32 页",
+          "view": "back",
+          "anchor": {
+            "position": [
+              54,
+              -60,
+              -16.5
+            ],
+            "normal": [
+              0,
+              0,
+              -1
+            ],
+            "size": [
+              9,
+              9,
+              2
+            ],
+            "occlusionTolerance": 2
+          }
+        },
+        {
+          "id": "profinet",
+          "title": "X1 PROFINET 网口",
+          "eyebrow": "1 × RJ45 · 10/100 Mbit/s",
+          "summary": "底部 X1 为单个 RJ45 PROFINET / Ethernet 接口，背部原厂标识为 PROFINET (LAN)、X1、P1。",
+          "purpose": "该接口用于与控制器通信，也可连接组态 PC 进行项目传送；PN 型号以此作为网络接口。",
+          "connection": "使用适合工业环境的 Ethernet 电缆接入 X1；连接 PLC 或交换机时，应按项目核对网络和通信设置。",
+          "example": "在底部接口排中找到带锁扣缺口的 RJ45 插座，并与旁边较扁的 USB-A 插座比较。",
+          "notes": [
+            "只有 1 个 RJ45 网口，支持 10/100 Mbit/s。",
+            "本机 X1 不作为供电入口，不按 PoE 方式给 HMI 供电。",
+            "PN 型号没有 DP 型号使用的 9 针 RS422/RS485 插座。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=121",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 121 页",
+          "view": "bottom",
+          "anchor": {
+            "position": [
+              -38.2,
+              -54.7,
+              -30.5
+            ],
+            "normal": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              16.5,
+              2,
+              17
+            ],
+            "occlusionTolerance": 2
+          }
+        },
+        {
+          "id": "usb",
+          "title": "X60 USB 接口",
+          "eyebrow": "USB 2.0 · Type A",
+          "summary": "X60 是位于底部的 USB Type A 插座，背部标识为 USB X60。它的扁矩形外形与 RJ45 网口不同。",
+          "purpose": "连接支持的 USB 外设或存储介质，按设备功能用于数据、备份恢复等操作。",
+          "connection": "将符合设备兼容要求的 USB 外设插入 X60。USB 接口为 +5 V 输出，官方规定最大输出电流为 500 mA。",
+          "example": "比较 USB-A 与 RJ45 的插头外形，指出不能仅凭接口相邻就互换电缆。",
+          "notes": [
+            "USB 口不是 X80 的 24 V 电源接线端。",
+            "支持的外设、存储介质和使用步骤以西门子官方手册及兼容资料为准。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=121",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 121 页",
+          "view": "bottom",
+          "anchor": {
+            "position": [
+              -15.5,
+              -54.7,
+              -28.4
+            ],
+            "normal": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              16,
+              2,
+              7
+            ],
+            "occlusionTolerance": 2
+          }
+        },
+        {
+          "id": "mounting",
+          "title": "面板安装与固定槽",
+          "eyebrow": "7 个安装夹具 · 嵌入安装",
+          "summary": "机身从控制柜面板开孔的正面插入，安装夹具从背部固定在相应的机壳凹槽中。",
+          "purpose": "前框和背部夹具共同夹持安装面板；应保证开孔周围材料有足够强度并均匀固定。",
+          "connection": "横向安装开孔为 197⁺¹₀ × 141⁺¹₀ mm。KTP700 Basic 需要 7 个安装夹具，按手册规定顺序和力矩固定。",
+          "example": "从侧面观察前框、柜门安装面与后壳固定结构的关系，指出为什么不能只靠电缆支撑面板。",
+          "notes": [
+            "官方手册规定夹具最大拧紧力矩 0.2 N·m。",
+            "原厂 CAD 以机壳固定凹槽表达安装位置，未把 7 个夹具建为独立模型。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=27",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 27 页",
+          "view": "right",
+          "anchor": {
+            "position": [
+              98,
+              20,
+              -35
+            ],
+            "normal": [
+              1,
+              0,
+              0
+            ],
+            "size": [
+              2,
+              9,
+              18
+            ],
+            "occlusionTolerance": 2
+          }
+        },
+        {
+          "id": "mounting-seal",
+          "title": "密封圈与安装面",
+          "eyebrow": "前面板密封 · 正确压紧",
+          "summary": "前框背侧周边可见连续的黑色安装密封圈。安装时密封圈应平整贴合控制柜的开孔周围。",
+          "purpose": "在满足规定安装条件时，前面板达到 IP65 防护；机身背侧为 IP20，需要柜体提供适当保护。",
+          "connection": "安装表面应干燥、清洁且足够平整；保证密封圈没有翘起、挤出或夹住标签条。",
+          "example": "转到背部观察黑色密封圈的完整边界，并说明前部防护等级为什么与安装质量有关。",
+          "notes": [
+            "IP65 前面板安装区域的板厚范围为 2～6 mm，其他安装条件见手册。",
+            "前框厚度 6.2 mm 与机身安装深度 39 mm 是不同尺寸。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=109",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 109 页",
+          "view": "back",
+          "anchor": {
+            "position": [
+              102,
+              0,
+              -6
+            ],
+            "normal": [
+              0,
+              0,
+              -1
+            ],
+            "size": [
+              5,
+              120,
+              2
+            ],
+            "occlusionTolerance": 2
+          }
+        },
+        {
+          "id": "rating-plate",
+          "title": "铭牌与接口标识",
+          "eyebrow": "型号核对 · 接线前识别",
+          "summary": "背部铭牌区域标出 KTP700 Basic 与订货号；底部接口附近另有 X80、X60、X1 和对应功能标识。",
+          "purpose": "接线、备件选择和查阅资料前，应先核对精确订货号，确认正在使用的就是 PN 型号。",
+          "connection": "本页对应 6AV2123-2GB03-0AX0。接线时同时查看端口名称、接插件形状和极性，不能仅靠位置记忆。",
+          "example": "在原厂模型上读出 6AV2123-2GB03-0AX0，再回到底部依次对应 X80、X60 和 X1。",
+          "notes": [
+            "原厂模型保留了自己的文字几何。",
+            "具体实物的序列号、硬件版本及认证标志以该台设备铭牌为准。"
+          ],
+          "sourceUrl": "https://cache.industry.siemens.com/dl/files/350/90114350/att_904652/v2/HWBasicPanels2GenUS_en-US.pdf#page=12",
+          "sourceTitle": "西门子 Basic Panels 第二代硬件手册（10/2024） · 第 12 页",
+          "view": "back",
+          "anchor": {
+            "position": [
+              47,
+              35,
+              -45.3
+            ],
+            "normal": [
+              0,
+              0,
+              -1
+            ],
+            "size": [
+              74,
+              43,
+              1
+            ],
+            "occlusionTolerance": 2
+          }
+        }
+      ],
+      "motions": [
+        {
+          "id": "power-connector",
+          "label": "电源插头",
+          "node": "power_connector",
+          "translation": [
+            0,
+            -32,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceNote": "全部几何来自西门子原厂 STEP，74,400 个三角面完整保留，教学补建几何为 0。依据官方外观整理材质；仅为原有屏幕面指定静态深灰关屏配色，未添加运行画面或端口。"
+}
