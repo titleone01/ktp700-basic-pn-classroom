@@ -42,8 +42,8 @@
       "offlineFile": "工业网络与组态技术_ktp700-basic-pn_硬件认识_离线.html",
       "offline": {
         "file": "工业网络与组态技术_ktp700-basic-pn_硬件认识_离线.html",
-        "bytes": 4074103,
-        "sha256": "2441bd3728b72212894227cc86c56c3a20216e68a58013b02a7ed3b18dfc2dba",
+        "bytes": 4074407,
+        "sha256": "93cd79b71daa214a766943d905d3fc95a5fd5de1d49f48176774f19affa66496",
         "embeddedModels": [
           {
             "id": "ktp700-basic-pn",
@@ -52,9 +52,9 @@
           }
         ]
       },
-      "bundle": "app-a8d168451ae7.js",
-      "htmlSha256": "65d181715c8b0e893ff4576c99a4b0d3c2d52050c4529671605583edef0020ce",
-      "bundleSha256": "a8d168451ae72220c3645b76566ca5758b39b7f78969de07948d7b1ff02e3356",
+      "bundle": "app-58613a773eaa.js",
+      "htmlSha256": "fe6d43e5478c739ca8e11eabbc34c8f1c86bbca9db6bf1db2a9d34359d6ff67e",
+      "bundleSha256": "58613a773eaa3d04046f30c14cd92ee4edc3cc2ec6bd2f2c76f43f1c1ac1a426",
       "models": [
         {
           "variant": "ktp700-basic-pn",
@@ -78,8 +78,8 @@
       "offlineFile": "PLC应用技术_ktp700-basic-pn_硬件认识_离线.html",
       "offline": {
         "file": "PLC应用技术_ktp700-basic-pn_硬件认识_离线.html",
-        "bytes": 4074079,
-        "sha256": "61d617d5da99a98f2abb68e2290b64274b1e16206dbfa7cc6344a42bf6888241",
+        "bytes": 4074383,
+        "sha256": "40397b717eb82786da889d2bfdd534d061ca4ad4788cf5b675e064b09ac8da57",
         "embeddedModels": [
           {
             "id": "ktp700-basic-pn",
@@ -88,9 +88,9 @@
           }
         ]
       },
-      "bundle": "app-a8d168451ae7.js",
-      "htmlSha256": "2db6c50318fdd9008eb406eca7bd805b56ccb9b2c10a473c0c517e93c7b4563b",
-      "bundleSha256": "a8d168451ae72220c3645b76566ca5758b39b7f78969de07948d7b1ff02e3356",
+      "bundle": "app-58613a773eaa.js",
+      "htmlSha256": "a7029f5aa17bca70758aa2b72e555c07c01cc56b7866a2ffab5bc7ac29e1b1dc",
+      "bundleSha256": "58613a773eaa3d04046f30c14cd92ee4edc3cc2ec6bd2f2c76f43f1c1ac1a426",
       "models": [
         {
           "variant": "ktp700-basic-pn",

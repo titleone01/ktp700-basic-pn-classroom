@@ -25,6 +25,9 @@ const dirs={overview:[.8,.42,1.8],front:[0,0,1],back:[0,0,-1],left:[-1,0,.001],r
 function goView(view='overview',focus){
   if(!model)return;state.view=view;
   const bounds=new THREE.Box3().setFromObject(model),size=bounds.getSize(new THREE.Vector3());
+  // Frame the whole current-to-target travel before a detachable part starts moving.
+  for(const m of moving)bounds.union(new THREE.Box3().setFromObject(m.node).translate(m.worldDelta.clone().multiplyScalar(state.explodeGoal-state.explode)));
+  bounds.getSize(size);
   const center=bounds.getCenter(new THREE.Vector3());
   const target=focus?focus.clone().lerp(center,.15):center;
   const radius=Math.max(size.x,size.y,size.z),direction=new THREE.Vector3(...(dirs[view]||dirs.front)).normalize();
@@ -99,7 +102,7 @@ for(const v of device.variants){const o=document.createElement('option');o.value
 $('retry-load').onclick=()=>renderer.getContext().isContextLost()?location.reload():changeVariant(state.variant);$('reset-view').onclick=()=>goView();$('reset-all').onclick=reset;
 $('toggle-labels').onchange=e=>state.labels=e.target.checked;
 $('explode-toggle').onclick=()=>{state.explodeGoal=state.explodeGoal?0:1;state.paused=false;goView('back');updateMotionUI();};
-$('explode-range').oninput=e=>{state.explode=state.explodeGoal=Number(e.target.value)/100;applyPose();updateMotionUI();};
+$('explode-range').oninput=e=>{state.explode=state.explodeGoal=Number(e.target.value)/100;applyPose();goView(state.view);updateMotionUI();};
 $('motion-pause').onclick=()=>{state.paused=!state.paused;updateMotionUI();};
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>goView(b.dataset.view));
 controls.addEventListener('start',()=>cameraMotion=null);
@@ -109,7 +112,7 @@ renderer.domElement.addEventListener('pointerup',e=>{if(!state.loaded||!down||Ma
 function resize(){const old=camera.aspect;camera.aspect=stage.clientWidth/stage.clientHeight;camera.updateProjectionMatrix();renderer.setSize(stage.clientWidth,stage.clientHeight);if(state.loaded&&Math.abs(old-camera.aspect)>.01)goView(state.view,anchors.get(state.topic)?.position);}
 new ResizeObserver(resize).observe(stage);resize();camera.position.set(250,150,550);
 function animate(now){const dt=Math.min((now-last)/1000,.05);last=now;if(state.loaded){if(!state.paused){state.explode=THREE.MathUtils.lerp(state.explode,state.explodeGoal,reduced?1:1-Math.exp(-dt*8));if(Math.abs(state.explode-state.explodeGoal)<.00005)state.explode=state.explodeGoal;applyPose();}if(cameraMotion){const m=cameraMotion;m.elapsed+=dt;const t=Math.min(1,m.elapsed/(reduced?.01:.7)),q=t*t*(3-2*t);camera.position.lerpVectors(m.from,m.to,q);controls.target.lerpVectors(m.fromTarget,m.target,q);if(t===1)cameraMotion=null;}controls.update();camera.updateMatrixWorld(true);updateHotspots();}renderer.render(scene,camera);raf=requestAnimationFrame(animate);}
-window.__HMI__={snapshot:()=>({...state,device:device.id,sourceKind:device.sourceKind,modelBounds:model?new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3()).toArray():null,camera:camera.position.toArray(),target:controls.target.toArray(),topicCount:topics().length,visibleHotspots:[...hotspots].filter(([,el])=>!el.hidden).map(([id])=>id),labels:[...anchors].map(([id,a])=>({id,position:a.position.toArray(),visible:!hotspots.get(id).hidden,x:parseFloat(hotspots.get(id).style.left),y:parseFloat(hotspots.get(id).style.top)})),partPositions:Object.fromEntries(moving.map(m=>[m.id,m.node.position.toArray()])),renderTriangles:renderer.info.render.triangles})};
+window.__HMI__={snapshot:()=>({...state,device:device.id,sourceKind:device.sourceKind,modelBounds:model?new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3()).toArray():null,camera:camera.position.toArray(),target:controls.target.toArray(),topicCount:topics().length,visibleHotspots:[...hotspots].filter(([,el])=>!el.hidden).map(([id])=>id),labels:[...anchors].map(([id,a])=>({id,position:a.position.toArray(),visible:!hotspots.get(id).hidden,x:parseFloat(hotspots.get(id).style.left),y:parseFloat(hotspots.get(id).style.top)})),partPositions:Object.fromEntries(moving.map(m=>[m.id,m.node.position.toArray()])),movingPartBounds:Object.fromEntries(moving.map(m=>{const b=new THREE.Box3().setFromObject(m.node);return[m.id,{min:b.min.toArray(),max:b.max.toArray()}];})),renderTriangles:renderer.info.render.triangles})};
 window.addEventListener('pagehide',()=>{cancelAnimationFrame(raf);raf=0;});
 window.addEventListener('pageshow',event=>{if(event.persisted&&!raf){last=performance.now();raf=requestAnimationFrame(animate);}});
 changeVariant(state.variant);raf=requestAnimationFrame(animate);
